@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: gray;
+    color: #222;
 `;
 
 export const SwitchMode = styled.div`
@@ -9,7 +9,7 @@ export const SwitchMode = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    background-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `;
 
 export const Title = styled.div`

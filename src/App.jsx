@@ -12,7 +12,7 @@ function App() {
 
       <SwitchMode>
         <Title>
-          <h5>Where in the world</h5>
+          <h5>Where in the world?</h5>
         </Title>
           Dark Mode
       </SwitchMode>

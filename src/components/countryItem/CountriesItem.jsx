@@ -1,20 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import {Content, Linked, Img, Description}  from './countryItem.styled';
+
 export function CountriesItem({ countries }) {
     return (
-        <>
-                <Link to={`/country/${countries.name}`}>
-                    <div>
-                        <img src={countries.flags.png} alt="" />
-                    </div>
-                    <div>
-                        {countries.name}
-                        {countries.population}
-                        {countries.region}
-                        {countries.capital}
-                    </div>
-                </Link>
-        </>
+        <Content>
+                <Linked to={`/country/${countries.name}`}>
+                    <Img>
+                        <img src={countries.flags.png} alt=""/>
+                    </Img>
+                    <Description>
+                        <h3>{countries.name}</h3>
+                        <p> <span>Population: </span>{countries.population}</p>
+                        <p> <span>Region: </span>{countries.region}</p>
+                        <p> <span>Capital: </span>{countries.capital}</p>
+                    </Description>
+                </Linked>
+        </Content>
     );
 };
